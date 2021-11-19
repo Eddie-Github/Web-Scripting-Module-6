@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <!-- Title for browser tab -->
+      <title>Module 6</title>
+      <!-- Link to CSS -->
+      <link href="index.css" rel="stylesheet" type="text/css">
+    </head>
+	
+    <body>
+      <!-- Header -->
+      <h1>Sales Tax Calculator</h1>
+      
+        <!-- Form with labels, inputs, and submit button -->
+        <form id="salesTaxForm">         
+          <h3>Input the Purchase Amount</h3>
+          <p> 
+            <input type="texg" name="amount" id="amount" autocomplete="off" required>
+          </p>
+          <h3>Input the Tax Rate as a Decimal</h3>
+          <p> 
+           <input type="text" name="rate" id="rate" autocomplete="off" required>
+          </p>
+          <button onclick="salesTaxForm()" type="submit">Calculate</button>
+        </form>
+
+        <!-- output -->
+        <h3 id="output"></h3>
+
+               
+        <!-- Footer with first name -->
+        <footer>&copy; - Eddie 2021</footer>
+        
+        <!-- Link to JavaScript -->
+        <script src="index.js"></script>
+   </body>
+	
+</html>
