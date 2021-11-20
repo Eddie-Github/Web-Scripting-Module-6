@@ -12,7 +12,7 @@ function salesTaxForm(event)
     var rate = document.getElementById("rate").value;
     tax.taxRate(rate);
     //calculate tax and show output
-    document.getElementById("output").innerHTML = tax.calculate();
+    tax.calculate();
 }
 
 //sales tax calculator class
@@ -29,7 +29,7 @@ class SalesTax{
     calculate(){
         var taxAmount = parseFloat(this.purchaseAmount) * parseFloat(this.rate);
         var total = parseFloat(this.purchaseAmount) + taxAmount;
-        return "The tax amount is: $" + taxAmount.toFixed(2) + 
-            "\nThe total with tax is: $" + total.toFixed(2);
+        document.getElementById("output1").innerHTML = "The tax amount is: $" + taxAmount.toFixed(2);
+        document.getElementById("output2").innerHTML = "The total with tax is: $" + total.toFixed(2);
     }
 }
